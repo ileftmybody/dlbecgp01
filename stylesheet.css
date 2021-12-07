@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+
+
+/* CSS Daten der Log7-Consult GmbH */
+/* Start bodydefinition */
+body { 
+	background: #FFFFFF;
+	background-image: url("log7_glossar_bg.png");
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: center top; 
+	font-family: "Verdana";
+	border: solid 30px #d0b6c0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;	
+	}	
+/* Ende bodydefinition */
+
+
+
+/* Start Schriftdefinitionen */
+h1	{font-family: "Editor Extrabold";/* Erste Headline */
+	font-size: 6em;
+	color: #1a609d;
+	text-align: left;
+	line-height: 90%;
+	text-indent: 50px;
+	margin-top: 85px; 
+	margin-left: 0px;  
+	/* hyphens - Textumbruch */
+   -moz-hyphens: auto;
+   -o-hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+   hyphens: auto; 
+	}
+h2	{font-family: "Helvetica";/* Zweite Headline */
+	font-size: 2.2em;
+	font-weight: lighter;
+	color: #1a609d;
+	text-align: left;
+	margin-left: 50px;
+	margin-bottom: 0px;
+	}
+h3	{font-family: "Verdana";/* Dritte Headline */
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #1a609d;
+	text-align: left;
+	margin-left: 50px;
+	}
+h4	{font-family: "Verdana";/* Vierte Headline */
+	font-size: 1em;
+	color: #1a609d;
+	text-align: left;
+	margin-left: 50px;
+	}
+p	{font-family: "Verdana";/* Fließtext */
+	font-size: 0.8em;
+	color: #1a609d;
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	}
+pi	{font-family: "Verdana";/* Fließtext Kursiv */
+	font-size: 0.8em;
+	font-style: italic;
+	color: #1a609d;
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	}
+li	{font-family: "Verdana";/* Liste */
+	width: 70%;
+	font-size: 0.8em;
+	color: #1a609d;
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	list-style-type: square;
+	}
+
+/* Start Liniendefinition für h3*/
+hr.linie {
+  	border-top: 1px solid #1a609d;
+	margin-top: -18px;
+	margin-bottom: -8px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+/* Ende Liniendefinition für h3 */
+
+/* Start Definition von Textspalten */
+.spalten {  columns: 2 12em;  
+  	-ms-hyphens: auto;
+  	-webkit-hyphens: auto;
+ 	hyphens: auto;  
+	column-rule:  0px dotted #1a609d;
+}
+/* Ende Definition von Textspalten */
+
+
+/* Start Definiton der Links */
+a:link { /* Unbesuchter Link */
+	color: blue;	
+}
+a:visited { /* Besuchter Link */
+	color: blueviolet;
+}
+/* Ende Definiton der Links */
+/* Ende Schriftdefinitionen */
+
+
+
+/* Definition Bilder*/
+.topFloat {
+  float: inherit; display: block;
+	margin-top: 50px;
+	margin-bottom: -70px;
+	margin-left: 0px;
+}
+.leftFloat {
+  float: left; margin-left: 505px; 
+}
+.rightFloat {
+  float: right; margin-right: 50px;
+}
+/* Ende Definition Bilder */
+
+
+/* Start des Suchefeldes */
+#sucheingabe {
+	background-image: url('https://image.flaticon.com/icons/png/512/751/751463.png'); /* Suchicon in der Eingabe */
+	background-size: 30px; /* Größe des Suchicons*/
+	background-position: 8px; /* Position des Suchicons */
+	background-repeat: no-repeat; /* Suchicon nicht wiederholen */
+	width: 400px; /* Weite des Suchfeldes */
+	font-size: 0.8em; /* Schriftgröße */
+	padding: 12px 20px 12px 40px; /* Abstände */
+	border: 1px solid #ddd; /* Randgröße -form -farbe */
+	margin-left: 50px; /* Abstand nach links */
+	margin-right: 50px; /* Abstand nach rechts */
+	margin-bottom: 12px; /* Abstand nach unten */
+}
+/* Ende des Suchfeldes */
+
+
+
+/* Start Definition der Fachbegrifftabelle */
+#fachbegrifftabelle {
+	border-collapse: collapse;
+	width: auto;
+	border: 0px solid #ddd;
+	font-family: "Verdana";
+	font-size: 0.8em;
+	color: #1a609d;
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+#fachbegrifftabelle th, #fachbegrifftabelle td {
+	border: 0px solid #ddd;
+	height: 18px;
+	padding: 8px;	
+}
+#fachbegrifftabelle th {
+	background-color: #d0b6c0; opacity: 1;
+	color: white;
+	font-weight: 800;
+}
+#fachbegrifftabelle tr.kopfzeile, #fachbegrifftabelle tr.hover {
+	color: white;
+	font-weight: 800;
+}
+/* Start Fachbegrifftabelle wechselnde Zeilenfarbe */
+#fachbegrifftabelle tr:nth-child(1n+2) {
+background-color: #f1e9ec;
+}
+#fachbegrifftabelle tr:nth-child(2n+3) {
+background-color: #e3d3d9;
+}
+/* Ende Fachbegrifftabelle wechselnde Zeilenfarbe */
+/* Ende Definition der Fachbegrifftabelle */
+
+
+
+/* Start Definition einer Tabelle */
+#tabelle {
+	border-collapse: collapse;
+	width: auto;
+	border: 0px solid #ddd;
+	font-family: "Verdana";
+	font-size: 0.8em;
+	color: #1a609d;
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+#tabelle td {
+	text-align: left;
+	border: 0px solid #ddd;
+	height: 8px;
+	padding: 4px;	
+}
+/* Ende Definition einer Tabelle */
