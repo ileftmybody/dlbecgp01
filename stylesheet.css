@@ -20,16 +20,16 @@ body {
 /* Ende bodydefinition */
 
 
-
 /* Start Schriftdefinitionen */
 h1	{font-family: "Editor Extrabold";/* Erste Headline */
 	font-size: 6em;
 	color: #1a609d;
 	text-align: left;
 	line-height: 90%;
-	text-indent: 50px;
+	text-indent: 0px;
 	margin-top: 85px; 
-	margin-left: 0px;  
+	margin-left: 50px;
+	margin-right: 50px;  
 	/* hyphens - Textumbruch */
    -moz-hyphens: auto;
    -o-hyphens: auto;
@@ -47,29 +47,34 @@ h2	{font-family: "Helvetica";/* Zweite Headline */
 	}
 h3	{font-family: "Verdana";/* Dritte Headline */
 	font-size: 1.5em;
-	font-weight: 300;
+	font-weight: lighter;
 	color: #1a609d;
 	text-align: left;
 	margin-left: 50px;
 	}
 h4	{font-family: "Verdana";/* Vierte Headline */
 	font-size: 1em;
+	font-weight: lighter;
 	color: #1a609d;
 	text-align: left;
 	margin-left: 50px;
 	}
 p	{font-family: "Verdana";/* Fließtext */
 	font-size: 0.8em;
+	font-weight: lighter;
 	color: #1a609d;
 	text-align: left;
+	line-height: 1.5;
 	margin-left: 50px;
 	margin-right: 50px;
 	}
 pi	{font-family: "Verdana";/* Fließtext Kursiv */
 	font-size: 0.8em;
+	font-weight: lighter;
 	font-style: italic;
 	color: #1a609d;
 	text-align: left;
+	line-height: 1.5;
 	margin-left: 50px;
 	margin-right: 50px;
 	}
@@ -78,6 +83,7 @@ li	{font-family: "Verdana";/* Liste */
 	font-size: 0.8em;
 	color: #1a609d;
 	text-align: left;
+	line-height: 1.5;
 	margin-left: 50px;
 	margin-right: 50px;
 	list-style-type: square;
@@ -93,6 +99,15 @@ hr.linie {
 }
 /* Ende Liniendefinition für h3 */
 
+/* Start Liniendefinition für Trennung Inhalt und Literaturverzeichnis */
+hr.linientrennung {
+  	border-top: 4px double #1a609d;
+	margin-bottom: -8px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+/* Ende Liniendefinition für Trennung Inhalt und Literaturverzeichnis */
+
 /* Start Definition von Textspalten */
 .spalten {  columns: 2 12em;  
   	-ms-hyphens: auto;
@@ -104,26 +119,51 @@ hr.linie {
 
 
 /* Start Definiton der Links */
-a:link { /* Unbesuchter Link */
+	a:link { /* Unbesuchter Link */
 	color: blue;	
-}
-a:visited { /* Besuchter Link */
+	}
+	a:visited { /* Besuchter Link */
 	color: blueviolet;
-}
+	}
 /* Ende Definiton der Links */
 /* Ende Schriftdefinitionen */
 
+/* Start Definition eines Buttons */
+.button {font-family: "Verdana";
+  background-color: #1a609d; 
+  border: 2px solid #1a609d;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 50px;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: white; 
+  color: #1a609d; 
+  border: 2px solid #1a609d;
+}
+/* Ende Definition eines Buttons */
 
 
 /* Definition Bilder*/
 .topFloat {
   float: inherit; display: block;
 	margin-top: 50px;
-	margin-bottom: -70px;
+	margin-bottom: -50px;
 	margin-left: 0px;
 }
+.pictopFloat {
+  float: inherit; display: block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 50px;
+}
 .leftFloat {
-  float: left; margin-left: 505px; 
+  float: left; margin-left: 50px; 
 }
 .rightFloat {
   float: right; margin-right: 50px;
@@ -208,3 +248,21 @@ background-color: #e3d3d9;
 	padding: 4px;	
 }
 /* Ende Definition einer Tabelle */
+
+/* Start Definition figure  */
+figure {
+	position: left;
+	margin: 0;
+	padding: 0px;
+	width: 100%;
+	border: 0px;
+}
+figcaption {
+	margin-top: 10px;
+	margin-left: 50px;
+	text-align: left;
+	font-family: "Verdana";
+	font-size: 0.8em;
+	color: #1a609d;
+}
+/* Ende Definition figure  */
